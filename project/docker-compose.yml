@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 services:
   db:
     image: postgres
@@ -15,5 +15,3 @@ services:
       - "8000:8000"
     depends_on:
       - db
-    environment:
-      - DJANGO_SETTINGS_MODULE=settings.production
