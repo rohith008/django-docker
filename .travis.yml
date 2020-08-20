@@ -10,7 +10,7 @@ services:
    - postgresql
 
 install:
-    - pipenv install
+    - pip3 install ./project/requirements.txt
 
 script:
-    - python manage.py test
+    - python ./project/manage.py test
