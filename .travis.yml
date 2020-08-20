@@ -10,7 +10,7 @@ services:
    - postgresql
 
 install:
-    - pip3 install ./project/requirements.txt
+    - pip3 install -r ./project/requirements.txt
 
 script:
     - python ./project/manage.py test
